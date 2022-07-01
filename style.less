@@ -41,7 +41,7 @@ h1 {
 }
 
 p {
-	.cores(23px, '');
+	.cores(23px, 'p');
 }
 
 .cores(@tamanho, @tag) {
@@ -49,6 +49,10 @@ p {
 	font-size: @tamanho;
 
 	& when (@tag ='h1') {
-		text-shadow: 2px, 1px, 1px #7a7b7c;
+		background-color: coral;
+	}
+
+	& when(@tag ='p') {
+		background-color: lightgreen;
 	}
 }
