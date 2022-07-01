@@ -2,6 +2,8 @@
 @cor2: green;
 @cor3: red;
 
+
+//mixin, funciona parecido com uma função que pode ser chamada dentro do elemento ou classe
 .drop-shadow {
 	text-shadow: 2px 1px 1px #CCC;
 	text-decoration: underline;
@@ -12,6 +14,7 @@ body {
 }
 
 h1 {
+	.drop-shadow(); //chamada do Mixin
 	color: @blue;
 }
 
